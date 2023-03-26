@@ -7,8 +7,21 @@
 body {
   font-family: 'Vazirmatn', sans-serif;
   font-weight: 400;
+  height: 200vh;
+}
+.title-heading {
+  text-align: center;
+  margin: 40px auto;
+}
+.title-heading h6 {
+  color: rgba(65, 86, 120, 0.9);
+}
+.title-heading h3 {
+  font-size: 35px;
+  color: #415678;
 }
 #navbar {
+  z-index: 1;
   height: 60px;
   width: 100%;
   top: 0;
@@ -58,12 +71,15 @@ body {
   padding: 10px 20px;
   color: #dcdcdc;
   background-color: rgba(65, 86, 120, 0.9);
+  border: 2px solid transparent;
   border-radius: 4px;
-  transition: all 300ms ease 0s;
+  transition: all 150ms ease 0s;
 }
 #home #home-text button:hover {
-  color: #dcdcdc;
-  background-color: #415678;
+  color: #646464;
+  background-color: #f5f5f5;
+  border: 2px solid #646464;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
 }
 #about-us {
   margin: 20px auto;
@@ -87,4 +103,92 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: #646464;
+}
+#process #process-work {
+  display: flex;
+  justify-content: space-evenly;
+  height: 380px;
+}
+#process #process-work div {
+  background-color: #415678;
+  color: #f5f5f5;
+  text-align: center;
+  width: 280px;
+  height: 240px;
+  cursor: pointer;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease;
+}
+#process #process-work div:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+  scale: 1.04;
+}
+#process #process-work div:hover i,
+#process #process-work div:hover h5,
+#process #process-work div:hover p {
+  color: #415678;
+}
+#process #process-work div i {
+  font-size: 60px;
+}
+#process #process-work div h5 {
+  margin-bottom: 10px;
+}
+#process #process-work div p {
+  font-weight: 300;
+}
+#process #process-work .dark {
+  align-self: flex-start;
+}
+#process #process-work .light {
+  align-self: flex-end;
+}
+#items #item-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+#items #item-box div {
+  background-color: #f5f5f5;
+  height: 450px;
+  padding: 5px;
+  border: 16px;
+}
+#items #item-box div img {
+  width: 100px;
+  display: block;
+  margin: 20px auto;
+}
+#items #item-box div h2 {
+  font-size: 20px;
+  text-align: center;
+}
+#items #item-box div h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+#items #item-box div ul {
+  list-style: inside;
+}
+#items #item-box div ul li {
+  color: #646464;
+}
+#items #item-box div button {
+  width: max-content;
+  padding: 10px 20px;
+  color: #dcdcdc;
+  background-color: rgba(65, 86, 120, 0.9);
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: all 150ms ease 0s;
+}
+#items #item-box div button:hover {
+  color: #646464;
+  background-color: #f5f5f5;
+  border: 2px solid #646464;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
 }
