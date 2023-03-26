@@ -6,16 +6,19 @@
 }
 body {
   font-family: 'Vazirmatn', sans-serif;
+  font-weight: 400;
 }
 #navbar {
   height: 60px;
   width: 100%;
-  position: fixed;
-  background-color: #ebebeb;
+  top: 0;
+  position: sticky;
+  background-color: #f5f5f5;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 #navbar ul {
   list-style: none;
+  width: 80%;
   display: flex;
   justify-content: start;
 }
@@ -27,10 +30,61 @@ body {
   padding: 0px 5px;
   text-decoration: none;
   color: #282828;
-  font-weight: 500;
   transition: all 300ms ease 0s;
 }
 #navbar ul li a:hover {
   color: #646464;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+#home {
+  margin: 20px auto;
+  width: 80%;
+}
+#home #home-image img {
+  width: 100%;
+}
+#home #home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#home #home-text p {
+  font-size: 18px;
+  font-weight: 200;
+  color: #646464;
+}
+#home #home-text button {
+  width: max-content;
+  padding: 10px 20px;
+  color: #dcdcdc;
+  background-color: rgba(65, 86, 120, 0.9);
+  border-radius: 4px;
+  transition: all 300ms ease 0s;
+}
+#home #home-text button:hover {
+  color: #dcdcdc;
+  background-color: #415678;
+}
+#about-us {
+  margin: 20px auto;
+  width: 80%;
+}
+#about-us #about-image img {
+  width: 100%;
+}
+#about-us #about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about-us #about-text p {
+  font-size: 18px;
+  font-weight: 200;
+  color: #646464;
+}
+#about-us #about-text ul {
+  margin: 0px 15px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #646464;
 }
