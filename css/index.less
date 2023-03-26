@@ -1,0 +1,50 @@
+@color-white-light: rgb(235, 235, 235);
+@color-black-light: rgb(25, 25, 25);
+@color-text-black: rgb(40, 40, 40);
+@color-text-black-hover: rgb(100, 100, 100);
+@color-text-white: rgb(220, 220, 220);
+@color-text-white-hover: rgb(160, 160, 160);
+@color-shadow: rgba(0, 0, 0, 0.2);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+#navbar {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: @color-white-light;
+    box-shadow: 0px 0px 10px @color-shadow;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: start;
+
+        li {
+            line-height: 60px;
+            margin: 0px 10px;
+
+            a {
+                padding: 0px 5px;
+                text-decoration: none;
+                color: @color-text-black;
+                font-weight: 500;
+                transition: all 300ms ease 0s;
+
+                &:hover {
+                    color: @color-text-black-hover;
+                    text-shadow: 0px 0px 3px @color-shadow;
+                }
+            }
+        }
+    }
+}
