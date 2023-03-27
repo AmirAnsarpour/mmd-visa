@@ -22,7 +22,9 @@
 body {
     font-family: 'Vazirmatn', sans-serif;
     font-weight: 400;
-    height: 200vh;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .title-heading {
@@ -78,7 +80,8 @@ body {
 }
 
 #home {
-    margin: 20px auto;
+    padding-top: 65px;
+    margin: 0px auto 20px auto;
     width: 80%;
 
     #home-image {
@@ -123,7 +126,8 @@ body {
 }
 
 #about-us {
-    margin: 20px auto;
+    padding-top: 65px;
+    margin: 0px auto;
     width: 80%;
 
     #about-image {
@@ -157,6 +161,9 @@ body {
 }
 
 #process {
+    padding-top: 65px;
+    margin: -70px auto;
+
     #process-work {
         display: flex;
         justify-content: space-evenly;
@@ -244,6 +251,7 @@ body {
 }
 
 #items {
+    padding-top: 60px;
     margin: 60px auto;
 
     #item-box {
@@ -367,7 +375,7 @@ body {
 }
 
 #double-box {
-    margin: 60px auto;
+    margin: 60px auto 0px auto;
 
     #double-box-one {
         background-color: @color-them-one;
@@ -406,10 +414,11 @@ body {
     #double-box-two {
         background-color: rgba(240, 0, 0, 0.9);
         border-radius: 9px;
-        margin: 0px auto 30px auto;
+        margin: 0px auto 0px auto;
         padding: 15px;
 
         h2 {
+            color: @color-text-black;
             text-align: center;
             font-size: 25px;
             margin-bottom: 0px;
@@ -418,6 +427,9 @@ body {
 }
 
 #faq {
+    padding-top: 60px;
+    margin-top: -30px;
+
     #in-faq {
         margin-top: -20px;
 
@@ -455,6 +467,51 @@ body {
             p {
                 padding: 20px;
                 margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#contact-us {
+    padding-top: 60px;
+
+    #in-contact-us {
+        display: flex;
+        justify-content: space-evenly;
+        height: 200px;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            li {
+                list-style: none;
+                color: @color-them-one-dark;
+
+                &:first-child {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: @color-them-one-dark;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    color: @color-them-one;
+                    font-size: 16px;
+                }
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    text-decoration: none;
+                    color: @color-them-one;
+
+                    &:hover {
+                        color: @color-them-one-dark;
+                    }
+                }
             }
         }
     }

@@ -7,7 +7,9 @@
 body {
   font-family: 'Vazirmatn', sans-serif;
   font-weight: 400;
-  height: 200vh;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .title-heading {
   text-align: center;
@@ -53,7 +55,8 @@ body {
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 #home {
-  margin: 20px auto;
+  padding-top: 65px;
+  margin: 0px auto 20px auto;
   width: 80%;
 }
 #home #home-image img {
@@ -89,7 +92,8 @@ body {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
 }
 #about-us {
-  margin: 20px auto;
+  padding-top: 65px;
+  margin: 0px auto;
   width: 80%;
 }
 #about-us #about-image img {
@@ -113,6 +117,10 @@ body {
   font-size: 18px;
   font-weight: 300;
   color: rgba(65, 86, 120, 0.9);
+}
+#process {
+  padding-top: 65px;
+  margin: -70px auto;
 }
 #process #process-work {
   display: flex;
@@ -158,6 +166,7 @@ body {
   align-self: flex-end;
 }
 #items {
+  padding-top: 60px;
   margin: 60px auto;
 }
 #items #item-box {
@@ -254,7 +263,7 @@ body {
   box-shadow: 0px 0px 0px;
 }
 #double-box {
-  margin: 60px auto;
+  margin: 60px auto 0px auto;
 }
 #double-box #double-box-one {
   background-color: rgba(65, 86, 120, 0.9);
@@ -289,13 +298,18 @@ body {
 #double-box #double-box-two {
   background-color: rgba(240, 0, 0, 0.9);
   border-radius: 9px;
-  margin: 0px auto 30px auto;
+  margin: 0px auto 0px auto;
   padding: 15px;
 }
 #double-box #double-box-two h2 {
+  color: #282828;
   text-align: center;
   font-size: 25px;
   margin-bottom: 0px;
+}
+#faq {
+  padding-top: 60px;
+  margin-top: -30px;
 }
 #faq #in-faq {
   margin-top: -20px;
@@ -330,4 +344,41 @@ body {
 #faq #in-faq .answer p {
   padding: 20px;
   margin-bottom: 0;
+}
+#contact-us {
+  padding-top: 60px;
+}
+#contact-us #in-contact-us {
+  display: flex;
+  justify-content: space-evenly;
+  height: 200px;
+}
+#contact-us #in-contact-us ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#contact-us #in-contact-us ul li {
+  list-style: none;
+  color: #415678;
+}
+#contact-us #in-contact-us ul li:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  color: #415678;
+  margin-bottom: 20px;
+}
+#contact-us #in-contact-us ul li p {
+  color: rgba(65, 86, 120, 0.9);
+  font-size: 16px;
+}
+#contact-us #in-contact-us ul li a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(65, 86, 120, 0.9);
+}
+#contact-us #in-contact-us ul li a:hover {
+  color: #415678;
 }
