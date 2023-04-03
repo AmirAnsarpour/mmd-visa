@@ -29,4 +29,24 @@ $(document).ready(function () {
             $($(".answer")[2]).addClass("zero-height");
         }
     })
+    $($(".quest")[3]).click(function () {
+        if ($($(".answer")[3]).hasClass("zero-height")) {
+            $($(".quest i")[3]).addClass("bi-record2");
+            $($(".answer")[3]).removeClass("zero-height");
+        }
+        else {
+            $($(".quest i")[3]).removeClass("bi-record2");
+            $($(".answer")[3]).addClass("zero-height");
+        }
+    })
+    $($(".quest")[4]).click(function () {
+        if ($($(".answer")[4]).hasClass("zero-height")) {
+            $($(".quest i")[4]).addClass("bi-record2");
+            $($(".answer")[4]).removeClass("zero-height");
+        }
+        else {
+            $($(".quest i")[4]).removeClass("bi-record2");
+            $($(".answer")[4]).addClass("zero-height");
+        }
+    })
 })

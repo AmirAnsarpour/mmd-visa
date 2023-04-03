@@ -80,7 +80,7 @@ body {
 }
 
 #home {
-    padding-top: 65px;
+    padding-top: 70px;
     margin: 0px auto 20px auto;
     width: 80%;
 
@@ -96,6 +96,7 @@ body {
         justify-content: center;
 
         h1 {
+            font-size: 65px;
             color: @color-them-one-dark;
         }
 
@@ -459,7 +460,7 @@ body {
             overflow: hidden;
             color: @color-them-one-dark;
             background-color: rgb(245, 245, 245);
-            height: 100px;
+            height: auto;
             font-size: 20px;
             font-weight: 200;
             transition: all 300ms ease 0s;
@@ -468,6 +469,32 @@ body {
                 padding: 20px;
                 margin-bottom: 0;
             }
+
+            ul {
+                padding: 20px 40px;
+                margin: 0;
+                list-style: outside;
+            }
+        }
+
+        #answer1 {
+            height: 100px;
+        }
+
+        #answer2 {
+            height: 138px;
+        }
+
+        #answer3 {
+            height: 100px;
+        }
+
+        #answer4 {
+            height: 100px;
+        }
+
+        #answer5 {
+            height: 70px;
         }
     }
 }
@@ -477,7 +504,7 @@ body {
 
     #in-contact-us {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         height: 200px;
 
         ul {
@@ -487,6 +514,7 @@ body {
 
             li {
                 list-style: none;
+                text-align: center;
                 color: @color-them-one-dark;
 
                 &:first-child {
